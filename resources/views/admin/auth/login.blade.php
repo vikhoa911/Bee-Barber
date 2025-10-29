@@ -6,7 +6,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Sign In| TailAdmin - Tailwind CSS Admin Dashboard Template</title>
+    <title>Sign In</title>
     <link rel="icon" href="{{ asset('tailadmin/build/favicon.ico') }}">
     <link href="{{ asset('tailadmin/build/style.css') }}" rel="stylesheet">
 </head>
@@ -100,7 +100,7 @@ $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(valu
                                             <label for="checkboxLabelOne"
                                                 class="flex items-center text-sm font-normal text-gray-700 cursor-pointer select-none dark:text-gray-400">
                                                 <div class="relative">
-                                                    <input type="checkbox" id="checkboxLabelOne" class="sr-only"
+                                                    <input type="checkbox" name="remember" id="checkboxLabelOne" class="sr-only"
                                                         @change="checkboxToggle = !checkboxToggle" />
                                                     <div :class="checkboxToggle ? 'border-brand-500 bg-brand-500' :
                                                         'bg-transparent border-gray-300 dark:border-gray-700'"
